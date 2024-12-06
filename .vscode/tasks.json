@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Season Change",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "main.cpp",
+                "-framework", "OpenGL",
+                "-framework", "GLUT",
+                "-lGLEW",
+                "-L/opt/homebrew/lib",
+                "-I/opt/homebrew/include",
+                "-o", "season_change"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building Season Change"
+        }
+    ]
+}
